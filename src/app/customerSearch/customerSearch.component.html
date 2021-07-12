@@ -1,0 +1,40 @@
+
+
+<div class="layout-column align-items-center mt-50">
+  <section class="layout-row align-items-center justify-content-center">
+
+    <form [FormGroup]="searchForm">
+
+      <input type="text" class="large" placeholder="Enter Search Term eg Phil"  formControlName="search"
+           data-test-id="app-input"/>
+
+    </form>
+    
+  </section>
+
+  <div class="card w-45 mx-auto mt-75 pb-5">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Location</th>
+          <th>Gender</th>
+          <th>Income</th>
+        </tr>
+      </thead>
+      <tbody data-test-id="searched-customers">
+        <tr class="slide-up-fade-in">
+        <!-- Use below to render row for each customer object -->
+          <td>name</td>
+          <td>age</td>
+          <td>location</td>
+          <td>gender</td>
+          <td>income</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+​
+  <div class="mt-50 slide-up-fade-in" data-test-id="no-result">No Results Found</div>
+</div>
